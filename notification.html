@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Add navigation links or user profile information -->
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <h1>Send Notification</h1>
+            <form action="send_notification.php" method="POST">
+                <label for="recipient">Recipient:</label>
+                <input type="text" id="recipient" name="recipient" placeholder="Enter recipient's username" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message here" required></textarea>
+                
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Add footer content if needed -->
+    </footer>
+</body>
+</html>

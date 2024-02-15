@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contact Information</title>
+    <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+    <h1>Driver Emergency Contact</h1>
+    <form action="process_emergency_contact.php" method="POST">
+        <label for="driver-name">Driver's Name:</label>
+        <input type="text" id="driver-name" name="driver-name" required>
+
+        <label for="contact-name">Emergency Contact Name:</label>
+        <input type="text" id="contact-name" name="contact-name" required>
+
+        <label for="relationship">Relationship:</label>
+        <input type="text" id="relationship" name="relationship" required>
+
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" name="contact-number" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

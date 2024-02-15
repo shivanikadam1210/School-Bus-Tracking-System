@@ -1,0 +1,70 @@
+/* Style the header */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Style navigation links if you have them */
+
+/* Apply padding and margin to the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style paragraphs or content as needed */
+
+/* Style the contact information section */
+.contact-info {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style the contact form section */
+.contact-form {
+  margin-top: 20px;
+}
+
+/* Style labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style input and textarea fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add hover effect to the submit button */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Apply margin to headings */
+h2 {
+  margin-top: 20px;
+}

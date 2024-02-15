@@ -1,0 +1,220 @@
+<!-- <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Bus Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <a href="menu.html">Admin Form</a>
+            <a href="Admin.html"></a>
+        
+          <nav>
+             <ul class="Menu">
+              <div class="dropdown">
+                <div class="select">
+                  <span class="selected">Management</span>
+                  <div class="caret"></div>
+                </div>
+              </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="active"> Management</a></li>
+                <li><button class="loginbtn"
+                    onclick="document.getElementById('login-form').style.display='block' "style="width: auto;">Login</button>
+                </li>
+             </ul>
+           </nav>
+        </div>
+     <div id="login-form" class="login-page">
+      <div class="button-box">
+        <div id="btn"></div>
+          <button 
+           type="button" onclick="login()" class="toggle-btn">Log In</button>
+          <button 
+          type="button" onclick="register()" class="toggle-btn">Register</button>
+        </div>
+      <form id="Login" class="input-group-login">
+        <input type="text" class="input-field" placeholder="Email Id"
+        required>
+        <input type="password" class="input-field" placeholder="Enter password"
+        required>
+        <input type="checkbox" class="check-box"><span>Remember password</span>
+        <button type="submit" class="submit-btn">Log in</button>
+       </form>
+        <form id="register" class="input-group-register">
+           <input type="text" class="input-field"placeholder="First Name"required>
+           <input type="text" class="input-field"placeholder="Last Name"required>
+           <input type="email" class="input-field"  placeholder="Email Id"required>
+           <input type="password" class="input-field"  placeholder="Enter Password"required>
+           <input type="password" class="input-field"  placeholder="Confirm Password"required>
+           <input type="checkbox" class="check-box"><span>I agree to the terms and Conditions</span> 
+           <button type="submit" class="submit-btn">Register</button>
+        
+        </form>
+     </div> 
+     </div>
+     </div>
+     
+</body>
+ </html> -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Form | Login & Registration</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>Admin</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+
+                 <li><a href="Businfo\bus.html" class="link">Bus Info</a></li> </a>
+                 <li><a href="Busstop\busstop.html" class="link">Bus Stop</a></li>
+                 
+                <!-- <li class="nav-link services">
+                    <a href="#">Management
+                        <span class="material-icons dropdown-icon">
+                        </span>
+                    </a>
+                    <ul class="drop-down">
+                        <li>Service 1</li>
+                        <li>Service 2</li>
+                        <li>Service 3</li>
+                    </ul> -->
+                <!-- </li> -->
+                <li><a href="Routeinfo\Route.html" class="link">Route Info</a></li>
+                <li><a href="Studentinfo\student.html" class="link">Student Info</a></li>
+                <li><a href="Notification\notification.html" class="link">Notification</a></li>
+
+                <li><a href="#" class="link">Logout</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+<!----------------------------- Form box ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- login form -------------------------->
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Username or Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+        <!------------------- registration form -------------------------->
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Firstname">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Lastname">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+<script>
+   
+   function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+   }
+ 
+</script>
+<script>
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("registerBtn");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+</script>
+</body>
+</html>

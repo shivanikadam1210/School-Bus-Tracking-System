@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Notification</title>
+    <link rel="stylesheet" href="drivernoti.css">
+</head>
+<body>
+    <h1>Driver Notification</h1>
+    <form action="process_notification.php" method="POST">
+        <label for="bus-number">Bus Number:</label>
+        <input type="text" id="bus-number" name="bus-number" required>
+
+        <label for="message">Notification Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+        <input type="submit" value="Send Notification">
+    </form>
+</body>
+</html>

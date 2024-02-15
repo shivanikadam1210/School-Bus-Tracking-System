@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Stop Information</title>
+    <link rel="stylesheet" href="busstop.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Add navigation links or user profile information -->
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <h1>Add New Bus Stop</h1>
+            <form action="add_bus_stop.php" method="POST">
+                <label for="stop-name">Stop Name:</label>
+                <input type="text" id="stop-name" name="stop-name" required>
+                
+                <label for="stop-location">Stop Location:</label>
+                <input type="text" id="stop-location" name="stop-location" required>
+                
+                <label for="stop-description">Description:</label>
+                <textarea id="stop-description" name="stop-description" rows="4" required></textarea>
+                
+                <input type="submit" value="Add Bus Stop">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Add footer content if needed -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Tracking</title>
+    <link rel="stylesheet" href="bustrack.css">
+</head>
+<body>
+    <form action="bus_tracking.php" method="POST">
+        <label for="bus-number">Bus Number:</label>
+        <input type="text" id="bus-number" name="bus-number" required>
+    
+        <label for="driver-name">Driver's Name:</label>
+        <input type="text" id="driver-name" name="driver-name" required>
+    
+        <label for="route">Route:</label>
+        <select id="route" name="route" required>
+            <option value="route1">Route 1</option>
+            <option value="route2">Route 2</option>
+            <!-- Add more route options as needed -->
+        </select>
+    
+        <label for="departure-time">Departure Time:</label>
+        <input type="time" id="departure-time" name="departure-time" required>
+    
+        <label for="arrival-time">Arrival Time:</label>
+        <input type="time" id="arrival-time" name="arrival-time" required>
+    
+        <label for="status">Bus Status:</label>
+        <select id="status" name="status" required>
+            <option value="on-time">On Time</option>
+            <option value="delayed">Delayed</option>
+            <option value="broken-down">Broken Down</option>
+            <!-- Add more status options as needed -->
+        </select>
+    
+        <label for="remarks">Remarks:</label>
+        <textarea id="remarks" name="remarks" rows="4" cols="50"></textarea>
+    
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* Style the header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Style navigation links if you have them */
+  
+  /* Apply padding and margin to the main content */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style paragraphs or content as needed */
+  
+  /* Style the logout button */
+  form {
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect to the logout button */
+  input[type="submit"]:hover {
+    background-color: #ff7043;
+  }

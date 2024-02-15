@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Information</title>
+    <link rel="stylesheet" href="stylebus.css">
+    <link rel="stylesheet" href="https //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css.min.css">
+</head>
+<body>
+    <h1>Bus Information Form</h1>
+    <form class="bus-info-form" action="submit_bus_info.php" method="post">
+        <label for="bus_number">Bus Number:</label>
+        <input type="text" id="bus_number" name="bus_number" required>
+        
+        <label for="bus_driver">Bus Driver:</label>
+        <input type="text" id="bus_driver" name="bus_driver" required>
+        
+        <label for="route">Route:</label>
+        <select id="route" name="route">
+            <option value="route1">Route 1</option>
+            <option value="route2">Route 2</option>
+            <!-- Add more route options as needed -->
+        </select>
+        
+        <label for="capacity">Capacity:</label>
+        <input type="text" id="capacity" name="capacity" required>
+        
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

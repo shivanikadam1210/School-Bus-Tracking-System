@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Update</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <!-- Add header content if needed -->
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <h1>Profile Update</h1>
+            <form action="update_profile.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="CurrentUsername" disabled>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="user@example.com" required>
+
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password">
+
+                <input type="submit" value="Update Profile">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Add footer content if needed -->
+    </footer>
+</body>
+</html>

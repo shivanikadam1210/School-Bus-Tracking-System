@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Route Information</title>
+    <link rel="stylesheet" href="styleroute.css">
+    <link rel="stylesheet" href="https //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css.min.css">
+</head>
+<body>
+    <h1>Route Information Form</h1>
+    <form class="route-info-form" action="submit_route_info.php" method="post">
+        <label for="route_name">Route Name:</label>
+        <input type="text" id="route_name" name="route_name" required>
+        
+        <label for="start_location">Start Location:</label>
+        <input type="text" id="start_location" name="start_location" required>
+        
+        <label for="end_location">End Location:</label>
+        <input type="text" id="end_location" name="end_location" required>
+        
+        <label for="distance">Distance (in km):</label>
+        <input type="text" id="distance" name="distance" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

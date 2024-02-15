@@ -1,0 +1,78 @@
+/* Comments start with a slash and asterisk (/) and end with an asterisk and slash (/) */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* max-height: 400px; */
+    background-color: #f9f9f9;
+  }
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+.form-container label
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    /* color: #333; */
+}
+
+/* Select and style HTML elements by their HTML tag names */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Select and style elements by class name */
+.my-class {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Select and style elements by ID */
+#my-id {
+    background-color: #f0f0f0;
+}
+
+/* Apply styles to elements within another element */
+.container h2 {
+    font-size: 20px;
+}
+
+/* Style elements based on their state or interaction */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Create and use variables (custom properties) */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #333;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+/* Use media queries for responsive design */
+@media (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Tracking</title>
+    <link rel="stylesheet" href="GPSNotif.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Notification Subscription</h1>
+        <form action="#" method="post">
+            <!-- User Information -->
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" id="contactNumber" name="contactNumber">
+            </div>
+
+            <!-- Notification Preferences -->
+            <h2>Notification Preferences</h2>
+            <div class="form-group">
+                <label>Preferred Notification Method</label><br>
+                <input type="checkbox" id="emailNotification" name="notificationMethod[]" value="Email">
+                <label for="emailNotification">Email</label>
+                <input type="checkbox" id="smsNotification" name="notificationMethod[]" value="SMS">
+                <label for="smsNotification">SMS</label>
+                <input type="checkbox" id="appNotification" name="notificationMethod[]" value="App">
+                <label for="appNotification">Mobile App</label>
+            </div>
+            <div class="form-group">
+                <label for="notificationFrequency">Frequency of Notifications</label>
+                <select id="notificationFrequency" name="notificationFrequency">
+                    <option value="real-time">Real-Time</option>
+                    <option value="daily">Daily Summary</option>
+                    <option value="weekly">Weekly Summary</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Types of Notifications</label><br>
+                <input type="checkbox" id="arrivalNotification" name="notificationType[]" value="Bus Arrival">
+                <label for="arrivalNotification">Bus Arrival at Student's Stop</label>
+                <!-- Add more notification types as needed -->
+            </div>
+
+            <!-- Notification Settings (if applicable) -->
+            <!-- Emergency Contacts (if applicable) -->
+            <!-- Additional Comments (if applicable) -->
+
+            <!-- Consent and Agreement -->
+            <div class="form-group">
+                <label for="consentCheckbox">
+                    <input type="checkbox" id="consentCheckbox" name="consentCheckbox" required>
+                    I consent to receiving notifications as selected above.
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="agreementCheckbox">
+                    <input type="checkbox" id="agreementCheckbox" name="agreementCheckbox" required>
+                    I have read and agree to the notification terms and conditions.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="studentinfo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Add navigation links or user profile information -->
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <h1>Student Information Form</h1>
+            <form action="submit_student_info.php" method="POST">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="student-name" required>
+                
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" required>
+                
+                <label for="grade-level">Grade Level:</label>
+                <select id="grade-level" name="grade-level" required>
+                    <option value="1">Grade 1</option>
+                    <option value="2">Grade 2</option>
+                    <option value="3">Grade 3</option>
+                    <!-- Add more options as needed -->
+                </select>
+                
+                <label for="bus-stop">Bus Stop:</label>
+                <input type="text" id="bus-stop" name="bus-stop" required>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Add footer content if needed -->
+        <!-- Student Information -->
+    </footer>
+</body>
+</html>
